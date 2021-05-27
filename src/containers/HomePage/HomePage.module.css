@@ -1,0 +1,41 @@
+.mainTitle {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 4rem;
+  text-transform: uppercase;
+  margin: 35px auto;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.item {
+  cursor: pointer;
+  transition: .4s ease-in-out;
+  border-radius: 50%;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail {
+  background-color: cadetblue;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  padding: 32px;
+  margin-bottom: 15px;
+}
+
+.item img {
+  max-width: 130px;
+}
+
+.content h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
