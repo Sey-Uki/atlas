@@ -1,18 +1,19 @@
 import styles from "./Skull.module.css";
-import skull from "../../../assets/images/skeleton/300px-Human_skull_front_simplified_(bones)_ru.svg.png";
+import skull from "../../../assets/images/skeleton/skull.png";
 import { Breadcrumbs, Typography } from "@material-ui/core";
+import { Link } from 'react-router-dom'
 
 export const Skull = () => {
   return (
     <div className={styles.skull}>
       <div className="breadcrumbs">
         <Breadcrumbs aria-label="breadcrumb">
-          <a color="inherit" href="/">
+          <Link color="inherit" to="/">
             Home
-          </a>
-          <a color="inherit" href="/skeleton">
+          </Link>
+          <Link color="inherit" to="/skeleton">
             Skeleton
-          </a>
+          </Link>
           <Typography color="textPrimary">Skull</Typography>
         </Breadcrumbs>
         <h1>Skull</h1>

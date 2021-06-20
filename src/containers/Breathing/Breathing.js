@@ -2,22 +2,23 @@ import { Breadcrumbs, Typography } from "@material-ui/core";
 import { useState } from "react";
 import breathing from "../../assets/images/breathing/Breathing.png";
 import lungs from "../../assets/images/breathing/lung_PNG62.png";
+import { Link } from "react-router-dom";
 
-export const Breathing =() => {
+export const Breathing = () => {
   const [showCardLungs, setShowCardLungs] = useState(false);
   const [showCardNose, setShowCardNose] = useState(false);
-    return(
-        <div className="breathing">
-        <div className="breadcrumbs">
-          <Breadcrumbs aria-label="breadcrumb">
-            <a color="inherit" href="/">
-              Home
-            </a>
-            <Typography color="textPrimary">Breathing</Typography>
-          </Breadcrumbs>
-        </div>
 
-        <h1>Breathing</h1>
+  return (
+    <div className="breathing">
+      <div className="breadcrumbs">
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link color="inherit" to="/">
+            Home
+          </Link>
+          <Typography color="textPrimary">Breathing</Typography>
+        </Breadcrumbs>
+      </div>
+      <h1>Breathing</h1>
       <div className="content">
         <h2>Наведите на картинку</h2>
         <div className="thumbnail">
@@ -29,7 +30,7 @@ export const Breathing =() => {
               onMouseEnter={() => setShowCardLungs(true)}
               d="m 232.49821,577.61274 165.2917,-3.63278 9.08196,212.5179 -181.63923,0 z"
             ></path>
-             <path
+            <path
               className="block"
               fill="#b59247"
               onMouseLeave={() => setShowCardNose(false)}
@@ -43,26 +44,28 @@ export const Breathing =() => {
           <div className="card">
             <div className="cards">
               <p>
-              Легкие - это главный орган дыхания. Воздух поступает в них по длинным
-              трубкам - трахея и бронхам. Когда мы делаем вдох легкие наполняются воздухом,
-              а когда выдох - воздух выходит из легких и они уменьшаются.
+                Легкие - это главный орган дыхания. Воздух поступает в них по
+                длинным трубкам - трахея и бронхам. Когда мы делаем вдох легкие
+                наполняются воздухом, а когда выдох - воздух выходит из легких и
+                они уменьшаются.
               </p>
               <img src={lungs} alt="" height="150" />
             </div>
           </div>
         )}
-             {showCardNose && (
+        {showCardNose && (
           <div className="card">
             <div className="cards">
               <p>
-              Носом мы вдыхаем воздух. Внутри носа есть волоски, которые задерживают
-              пыль и микробы, чтобы они не попали в организм. Когда мы простуживаемся
+                Носом мы вдыхаем воздух. Внутри носа есть волоски, которые
+                задерживают пыль и микробы, чтобы они не попали в организм.
+                Когда мы простуживаемся
               </p>
               {/* <img src={lungs} alt="" height="150" /> */}
             </div>
           </div>
         )}
+      </div>
     </div>
-    </div>
-    )
-}
+  );
+};

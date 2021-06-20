@@ -8,6 +8,7 @@ import { Digestion } from "../../containers/Digestion/Digestion";
 import { Nerves } from "../../containers/Nerves/Nerves";
 import { Muscles } from "../../containers/Muscles/Muscles";
 import { Breathing } from "../../containers/Breathing/Breathing";
+import { About } from "../../containers/About/About";
 
 export const Routes = () => {
   return (
@@ -35,6 +36,9 @@ export const Routes = () => {
       </Route>
       <Route exact path="/breathing">
         <Breathing />
+      </Route>
+      <Route exact path="/about">
+        <About />
       </Route>
     </Switch>
   );

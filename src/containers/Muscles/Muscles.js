@@ -3,18 +3,20 @@ import muscles from "../../assets/images/muscles/Muscles.png";
 import mus from "../../assets/images/muscles/mus.jpg";
 import styles from "./Muscles.module.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Muscles = () => {
   const [showCardLeg, setShowCardLeg] = useState(false);
   const [showCardHip, setShowCardHip] = useState(false);
   const [showCardNeck, setShowCardNeck] = useState(false);
+
   return (
     <div className="muscles">
       <div className="breadcrumbs">
         <Breadcrumbs aria-label="breadcrumb">
-          <a color="inherit" href="/">
+          <Link color="inherit" to="/">
             Home
-          </a>
+          </Link>
           <Typography color="textPrimary">Muscles</Typography>
         </Breadcrumbs>
       </div>
@@ -55,7 +57,7 @@ export const Muscles = () => {
               d="m 203.19629,932.80356 -15.87481,202.56254 c 17.78206,-28.7846 36.03224,-57.2181 40.6395,-95.8838 5.94104,-43.91015 -1.92052,-79.7011 -24.76469,-106.67874 z"
             ></path>
 
-<path
+            <path
               className="block"
               fill="#b59247"
               onMouseLeave={() => setShowCardNeck(false)}
@@ -94,11 +96,12 @@ export const Muscles = () => {
           </div>
         )}
 
-{showCardNeck && (
+        {showCardNeck && (
           <div className={styles.miniCard}>
             <div className={styles.miniCards}>
-              <p>Мышцы шеи держат голову ровно и отвечают 
-                за повороты в разные стороны
+              <p>
+                Мышцы шеи держат голову ровно и отвечают за повороты в разные
+                стороны
               </p>
             </div>
           </div>

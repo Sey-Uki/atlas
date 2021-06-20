@@ -14,8 +14,9 @@
 
 .item {
   cursor: pointer;
-  transition: .4s ease-in-out;
+  transition: 0.4s ease-in-out;
   border-radius: 50%;
+  width: 200px;
 }
 
 .item:hover {
@@ -38,4 +39,12 @@
 .content h2 {
   font-size: 20px;
   font-weight: 700;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
 }

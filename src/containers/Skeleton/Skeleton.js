@@ -2,11 +2,12 @@ import styles from "./Skeleton.module.css";
 import skeleton from "../../assets/images/skeleton/skeleton.svg";
 import spine from "../../assets/images/skeleton/pngtree-cervical-spine-image_2248395.png";
 import chest from "../../assets/images/skeleton/5df4a962a5f8a033a6f467c39447f869.png";
-import skull from "../../assets/images/skeleton/300px-Human_skull_front_simplified_(bones)_ru.svg.png";
+import skull from "../../assets/images/skeleton/skull.png";
 import pelvis from "../../assets/images/skeleton/pelvis.png";
 import { useState } from "react";
 import { Breadcrumbs, Typography } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Skeleton = () => {
   const [showCardSkull, setShowCardSkull] = useState(false);
@@ -16,9 +17,9 @@ export const Skeleton = () => {
     <div className={styles.skeleton}>
       <div className="breadcrumbs">
         <Breadcrumbs aria-label="breadcrumb">
-          <a color="inherit" href="/">
+          <Link color="inherit" to="/">
             Home
-          </a>
+          </Link>
           <Typography color="textPrimary">Sceleton</Typography>
         </Breadcrumbs>
       </div>
@@ -28,13 +29,13 @@ export const Skeleton = () => {
         <div className="thumbnail">
           <svg viewBox="0 0 211 451">
             <NavLink to="/skull">
-            <path
-              className={styles.block}
-              fill="#b59247"
-              onMouseLeave={() => setShowCardSkull(false)}
-              onMouseEnter={() => setShowCardSkull(true)}
-              d="m 66.36385,30.814065 h 77.35927 l 0.55655,93.833405 -77.359277,-1.1803 z"
-            ></path>
+              <path
+                className={styles.block}
+                fill="#b59247"
+                onMouseLeave={() => setShowCardSkull(false)}
+                onMouseEnter={() => setShowCardSkull(true)}
+                d="m 66.36385,30.814065 h 77.35927 l 0.55655,93.833405 -77.359277,-1.1803 z"
+              ></path>
             </NavLink>
             <path
               className={styles.block}
@@ -93,7 +94,8 @@ export const Skeleton = () => {
           <div className={styles.card}>
             <div className={styles.cards}>
               <p>
-              Таз (лат. pelvis) — расположенная в основании позвоночника часть скелета человека
+                Таз (лат. pelvis) — расположенная в основании позвоночника часть
+                скелета человека
               </p>
               <img src={pelvis} alt="" height="150" />
             </div>

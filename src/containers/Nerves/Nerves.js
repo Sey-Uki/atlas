@@ -2,17 +2,19 @@ import { Breadcrumbs, Typography } from "@material-ui/core";
 import { useState } from "react";
 import nerves from "../../assets/images/nerves/Nerves.png";
 import brain from "../../assets/images/nerves/brain.png";
+import { Link } from "react-router-dom";
 
 export const Nerves = () => {
   const [showCardBrain, setShowCardBrain] = useState(false);
   const [showCardSpinalCord, setShowSpinalCord] = useState(false);
+
   return (
     <div className="nerves">
       <div className="breadcrumbs">
         <Breadcrumbs aria-label="breadcrumb">
-          <a color="inherit" href="/">
+          <Link color="inherit" exact to="/">
             Home
-          </a>
+          </Link>
           <Typography color="textPrimary">Nerves</Typography>
         </Breadcrumbs>
       </div>
@@ -42,9 +44,9 @@ export const Nerves = () => {
           <div className="card">
             <div className="cards">
               <p>
-              Головной мозг - это настоящий компьютер нашего организма. Он командует 
-              всеми органами, а череп, как шлем, надежно защищает мозг. Мозг работает всегда
-              даже тогда, когда мы спим.
+                Головной мозг - это настоящий компьютер нашего организма. Он
+                командует всеми органами, а череп, как шлем, надежно защищает
+                мозг. Мозг работает всегда даже тогда, когда мы спим.
               </p>
               <img src={brain} alt="" height="150" />
               {/* <img src={pelvis} alt="" height="150" /> */}
@@ -55,12 +57,13 @@ export const Nerves = () => {
           <div className="card">
             <div className="cards">
               <p>
-              Кроме головного мозга у нас есть спиной. Он спрятан в позвоночнике.
-              Спиной мозг помощник головного, именно он передает сигналы от головного мозга 
-              по нервам ко всем органам. 
+                Кроме головного мозга у нас есть спиной. Он спрятан в
+                позвоночнике. Спиной мозг помощник головного, именно он передает
+                сигналы от головного мозга по нервам ко всем органам.
               </p>
               <p>
-              Нервы пронизывают наше тело как тонкие проводки, они соединяют все органы.
+                Нервы пронизывают наше тело как тонкие проводки, они соединяют
+                все органы.
               </p>
               {/* <img src={brain} alt="" height="150" /> */}
             </div>

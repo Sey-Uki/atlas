@@ -3,6 +3,7 @@ import heart from "../../assets/images/heart/Heart.png";
 import heartImg from "../../assets/images/heart/anatomical-heart_1fac0.png"
 import { useState } from "react";
 import { Breadcrumbs, Typography } from "@material-ui/core";
+import { Link } from 'react-router-dom'
 
 export const Heart = () => {
   const [showCardHeart, setShowCardHeart] = useState(false);
@@ -10,9 +11,9 @@ export const Heart = () => {
     <div className={styles.skeleton}>
       <div className="breadcrumbs">
         <Breadcrumbs aria-label="breadcrumb">
-          <a color="inherit" href="/">
+          <Link color="inherit" to="/">
             Home
-          </a>
+          </Link>
           <Typography color="textPrimary">Heart</Typography>
         </Breadcrumbs>
       </div>

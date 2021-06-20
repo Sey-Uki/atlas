@@ -4,7 +4,8 @@ import digestion from "../../assets/images/digestion/Digestion.png";
 import liver from "../../assets/images/digestion/liverThx.png";
 import stomach from "../../assets/images/digestion/stomach.png";
 import gullet from "../../assets/images/digestion/gullet.png";
-import intestines from "../../assets/images/digestion/in.jpg"
+import intestines from "../../assets/images/digestion/in.jpg";
+import { Link } from "react-router-dom";
 
 export const Digestion = () => {
   const [showCardLiver, setShowCardLiver] = useState(false);
@@ -16,9 +17,9 @@ export const Digestion = () => {
     <div className="digestion">
       <div className="breadcrumbs">
         <Breadcrumbs aria-label="breadcrumb">
-          <a color="inherit" href="/">
+          <Link color="inherit" to="/">
             Home
-          </a>
+          </Link>
           <Typography color="textPrimary">Digestion</Typography>
         </Breadcrumbs>
       </div>
