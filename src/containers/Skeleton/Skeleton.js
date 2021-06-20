@@ -2,28 +2,32 @@ import styles from "./Skeleton.module.css";
 import skeleton from "../../assets/images/skeleton/skeleton.svg";
 import spine from "../../assets/images/skeleton/pngtree-cervical-spine-image_2248395.png";
 import chest from "../../assets/images/skeleton/5df4a962a5f8a033a6f467c39447f869.png";
-import skull from "../../assets/images/skeleton/300px-Human_skull_front_simplified_(bones)_ru.svg.png";
+import skull from "../../assets/images/skeleton/skull.png";
 import { useState } from "react";
 import { Breadcrumbs, Typography } from "@material-ui/core";
+import { NavLink } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 export const Skeleton = () => {
   const [showCardSkull, setShowCardSkull] = useState(false);
   const [showCardSpine, setShowCardSpine] = useState(false);
+  const [showCardPelvis, setShowCardPelvis] = useState(false);
   return (
     <div className={styles.skeleton}>
-      <div className={styles.breadcrumbs}>
+      <div className="breadcrumbs">
         <Breadcrumbs aria-label="breadcrumb">
-          <a color="inherit" href="/">
+          <Link color="inherit" to="/">
             Home
-          </a>
+          </Link>
           <Typography color="textPrimary">Sceleton</Typography>
         </Breadcrumbs>
       </div>
       <h1>Skeleton</h1>
       <div className={styles.content}>
-        <h2>Point</h2>
-        <div className={styles.thumbnail}>
+        <h2>Наведите на картинку</h2>
+        <div className="thumbnail">
           <svg viewBox="0 0 211 451">
+            <NavLink to="/skull">
             <path
               className={styles.block}
               fill="#b59247"
@@ -31,13 +35,20 @@ export const Skeleton = () => {
               onMouseEnter={() => setShowCardSkull(true)}
               d="m 66.36385,30.814065 h 77.35927 l 0.55655,93.833405 -77.359277,-1.1803 z"
             ></path>
-
+            </NavLink>
             <path
               className={styles.block}
               fill="#b59247"
               onMouseLeave={() => setShowCardSpine(false)}
               onMouseEnter={() => setShowCardSpine(true)}
               d="m 66.894438,132.81602 h 77.359272 l 0.55655,120.76439 -77.359279,-1.51906 z"
+            ></path>
+            <path
+              className={styles.block}
+              fill="#b59247"
+              onMouseLeave={() => setShowCardPelvis(false)}
+              onMouseEnter={() => setShowCardPelvis(true)}
+              d="m 73.751765,254.15176 h 64.731765 l -3.71412,28.65177 -55.711763,0.53059 z"
             ></path>
           </svg>
           <img src={skeleton} alt="" />
@@ -74,6 +85,17 @@ export const Skeleton = () => {
                   повреждений, состоит она из ребер
                 </p>
               </div>
+            </div>
+          </div>
+        )}
+
+        {showCardPelvis && (
+          <div className={styles.card}>
+            <div className={styles.cards}>
+              <p>
+                
+              </p>
+              {/* <img src={} className={} alt="" height="200" /> */}
             </div>
           </div>
         )}
