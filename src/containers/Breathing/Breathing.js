@@ -18,7 +18,7 @@ export const Breathing = () => {
           <Typography color="textPrimary">Breathing</Typography>
         </Breadcrumbs>
       </div>
-      <h1>Breathing</h1>
+      <h1>Дыхательная</h1>
       <div className="content">
         <h2>Наведите на картинку</h2>
         <div className="thumbnail">

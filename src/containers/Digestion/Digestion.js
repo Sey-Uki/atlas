@@ -23,7 +23,7 @@ export const Digestion = () => {
           <Typography color="textPrimary">Digestion</Typography>
         </Breadcrumbs>
       </div>
-      <h1>Digestion</h1>
+      <h1>Пищеварительная</h1>
       <div className="content">
         <h2>Наведите на картинку</h2>
         <div className="thumbnail">

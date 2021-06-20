@@ -18,7 +18,7 @@ export const Nerves = () => {
           <Typography color="textPrimary">Nerves</Typography>
         </Breadcrumbs>
       </div>
-      <h1>Nerves</h1>
+      <h1>Нервная</h1>
       <div className="content">
         <h2>Наведите на картинку</h2>
         <div className="thumbnail">

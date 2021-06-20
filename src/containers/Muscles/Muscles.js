@@ -20,7 +20,7 @@ export const Muscles = () => {
           <Typography color="textPrimary">Muscles</Typography>
         </Breadcrumbs>
       </div>
-      <h1>Muscles</h1>
+      <h1>Мышечная</h1>
       <div className="content">
         <h2>Наведите на картинку</h2>
         <div className="thumbnail">

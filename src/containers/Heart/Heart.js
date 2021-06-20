@@ -17,7 +17,7 @@ export const Heart = () => {
           <Typography color="textPrimary">Heart</Typography>
         </Breadcrumbs>
       </div>
-      <h1>Heart</h1>
+      <h1>Сердечно-сосудистая</h1>
       <div className={styles.content}>
         <h2>Наведите на картинку</h2>
         <div className="thumbnail">

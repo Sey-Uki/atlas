@@ -23,7 +23,7 @@ export const Skeleton = () => {
           <Typography color="textPrimary">Sceleton</Typography>
         </Breadcrumbs>
       </div>
-      <h1>Skeleton</h1>
+      <h1>Скелетная</h1>
       <div className={styles.content}>
         <h2>Наведите на картинку</h2>
         <div className="thumbnail">
