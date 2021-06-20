@@ -28,7 +28,8 @@ h1 {
 
 h2  {
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 svg{
@@ -38,3 +39,59 @@ svg{
 	height: 100%;
 	width: 100%;
 }
+
+.breadcrumbs {
+  padding-top: 30px;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.block {
+  opacity: 0;
+}
+
+.block:hover {
+  transition: opacity .2s ease;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.card {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  border-radius: 15px;
+  width: 280px;
+  height: 400px;
+  background-color: white;
+
+}
+
+.card_block {
+  display: flex;
+}
+
+.cards {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 260px;
+  height: 380px;
+  margin: 10px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+
+}
+
+.card p {
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+p {
+  font-size: 18px;
+}
+

@@ -8,7 +8,7 @@ export const Heart = () => {
   const [showCardHeart, setShowCardHeart] = useState(false);
   return (
     <div className={styles.skeleton}>
-      <div className={styles.breadcrumbs}>
+      <div className="breadcrumbs">
         <Breadcrumbs aria-label="breadcrumb">
           <a color="inherit" href="/">
             Home
@@ -18,8 +18,8 @@ export const Heart = () => {
       </div>
       <h1>Heart</h1>
       <div className={styles.content}>
-        <h2>Point</h2>
-        <div className={styles.thumbnail}>
+        <h2>Наведите на картинку</h2>
+        <div className="thumbnail">
           <svg viewBox="0 0 638.87323 1460.2817">
             <path
               className={styles.block}

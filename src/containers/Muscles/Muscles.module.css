@@ -1,0 +1,29 @@
+.miniCard {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    border-radius: 15px;
+    width: 280px;
+    height: 160px;
+    background-color: white;
+
+}
+
+
+.miniCards {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 260px;
+    height: 140px;
+    margin: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+
+}
+
+.miniCards p {
+    padding-top: 20px;
+    font-size: 20px;
+}
