@@ -36,12 +36,12 @@ export const HomePage = () => {
                     <div className={styles.item}>
                       <div className={styles.thumbnail}>
                         <img
-                          src={system.img_system}
-                          alt={system.img_system_alt}
+                          src={system.imgSrc}
+                          alt={system.imgAlt}
                         />
                       </div>
                       <div className={styles.content}>
-                        <h2>{system.name_system}</h2>
+                        <h2>{system.name}</h2>
                       </div>
                     </div>
                   </NavLink>
@@ -55,12 +55,12 @@ export const HomePage = () => {
                     <div className={styles.item}>
                       <div className={styles.thumbnail}>
                         <img
-                          src={system.img_system}
-                          alt={system.img_system_alt}
+                          src={system.imgSrc}
+                          alt={system.imgAlt}
                         />
                       </div>
                       <div className={styles.content}>
-                        <h2>{system.name_system}</h2>
+                        <h2>{system.name}</h2>
                       </div>
                     </div>
                   </NavLink>

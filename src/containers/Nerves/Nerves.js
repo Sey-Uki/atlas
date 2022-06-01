@@ -12,7 +12,7 @@ export const Nerves = () => {
     <div className="nerves">
       <div className="breadcrumbs">
         <Breadcrumbs aria-label="breadcrumb">
-          <Link color="inherit" exact to="/">
+          <Link color="inherit" to="/">
             Home
           </Link>
           <Typography color="textPrimary">Nerves</Typography>
